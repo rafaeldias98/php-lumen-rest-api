@@ -48,7 +48,7 @@ $    ./bin/tests.sh run
 $    ./bin/mysql.sh exec
 ```
 
-## :scroll: Create fake users
+## :man: Create fake users
 ```sh
 $    ./bin/seeder.sh run
 ```
