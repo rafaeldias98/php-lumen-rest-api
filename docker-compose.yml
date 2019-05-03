@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    restart: on-failure
+    command: php -S 0.0.0.0:80 -t public
+    volumes:
+      - ./:/app
+    ports:
+      - 80:80
+    networks:
+      default:
+        aliases:
+          - api.users.local
+
+  database:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: on-failure
+    ports:
+      - 3306:3306
+    env_file:
+      - .env
+    environment:
+      MYSQL_USER: $${DB_USERNAME}
+      MYSQL_PASSWORD: $${DB_PASSWORD}
+      MYSQL_DATABASE: $${DB_DATABASE}
+      MYSQL_ROOT_PASSWORD: $${DB_PASSWORD}
+      TZ: America/Sao_Paulo
+    volumes:
+      - ./database/fixtures:/docker-entrypoint-initdb.d
