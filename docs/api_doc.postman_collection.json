@@ -1,0 +1,200 @@
+{
+	"info": {
+		"_postman_id": "ac9308a0-6fbf-448b-82ec-bef4bad99c57",
+		"name": "PHP REST API (Users)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/prs.users.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"age\": 20,\n\t\"name\": \"foo bar\",\n\t\"email\": \"foo@bar.com\"\n}"
+				},
+				"url": {
+					"raw": "http://api.users.local/users/",
+					"protocol": "http",
+					"host": [
+						"api",
+						"users",
+						"local"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/prs.users.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.users.local/users/",
+					"protocol": "http",
+					"host": [
+						"api",
+						"users",
+						"local"
+					],
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User by Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/prs.users.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.users.local/users/{userId}",
+					"protocol": "http",
+					"host": [
+						"api",
+						"users",
+						"local"
+					],
+					"path": [
+						"users",
+						"{userId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/prs.users.v1+json"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://api.users.local/users/{userId}",
+					"protocol": "http",
+					"host": [
+						"api",
+						"users",
+						"local"
+					],
+					"path": [
+						"users",
+						"{userId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/prs.users.v1+json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"age\": 20,\n\t\"name\": \"foo bar\",\n\t\"email\": \"foo@bar.com\"\n}"
+				},
+				"url": {
+					"raw": "http://api.users.local/users/{userId}",
+					"protocol": "http",
+					"host": [
+						"api",
+						"users",
+						"local"
+					],
+					"path": [
+						"users",
+						"{userId}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
