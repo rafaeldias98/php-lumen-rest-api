@@ -9,7 +9,7 @@
 4. [Open API container bash](#robot-open-api-container-bash)
 5. [Run Tests](#skull-run-tests)
 6. [Connect to mysql shell](#dolphin-connect-to-mysql-shell)
-7. [Create fake users](#scroll-create-fake-users)
+7. [Create fake users](#man-create-fake-users)
 8. [Generate APIDOC](#newspaper-generate-apidoc)
 9. [Read docs](#books-read-docs)
 10. [Contribuiting](#wrench-contribuiting)
@@ -49,7 +49,7 @@ $    ./bin/tests.sh run
 $    ./bin/mysql.sh exec
 ```
 
-## :scroll: Create fake users
+## :man: Create fake users
 ```sh
 $    ./bin/seeder.sh run
 ```
