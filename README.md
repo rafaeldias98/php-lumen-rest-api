@@ -29,6 +29,7 @@
 
 ## :rocket: Setup and init API
 ```sh
+$    echo "127.0.0.1	api.users.local" >> /etc/hosts
 $    cp .env.example .env
 $    docker-compose up
 ```
