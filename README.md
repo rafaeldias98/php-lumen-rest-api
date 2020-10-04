@@ -63,7 +63,7 @@ $    ./bin/doc.sh create
 - To learn how to use the API, read: docs/APIDOC.md
 - To speed up the use of API, see postman requests collection: docs/api_doc.postman_collection.json
 
-## :wrench: Contribuiting
+## :wrench: Contributing
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/rafaeldias98/php-lumen-rest-api/issues/new)
 
 If you find any problem or have a suggestion, please [open an issue](https://github.com/rafaeldias98/php-lumen-rest-api/issues/new).
